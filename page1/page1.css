@@ -213,26 +213,56 @@
   font-weight: normal;
 }
 .footer-background .title-content {
-  font-size: 1.7em;
+  font-size: 1.6em;
   width: 40%;
 }
 .footer-background .footer-subtitle {
   margin-top: 20px;
   font-size: 1.29em;
   margin-bottom: 40px;
-  width: 75%;
+}
+.footer-background .footer-subtitle .subtitle-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-background .footer-subtitle .subtitle-heading .destop-tag {
+  cursor: pointer;
+}
+.footer-background .footer-subtitle .panagraph-content {
+  width: 90%;
+  font-size: 1.2em;
 }
 .footer-background .footer-content {
   margin-top: 20px;
   font-size: 1.3em;
   margin-bottom: 40px;
-  width: 75%;
+}
+.footer-background .footer-content .footer-content-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-background .footer-content .footer-content-heading .destop-tag {
+  cursor: pointer;
+}
+.footer-background .footer-content .panagraph-content {
+  width: 90%;
+  font-size: 1.2em;
 }
 .footer-background .footer-note {
   margin-top: 20px;
   font-size: 1.29em;
   margin-bottom: 40px;
-  width: 75%;
+}
+.footer-background .footer-note .note-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-background .footer-note .note-heading .destop-tag {
+  cursor: pointer;
+}
+.footer-background .footer-note .panagraph-content {
+  width: 90%;
+  font-size: 1.2em;
 }
 .footer-background .footer-contact {
   display: flex;
@@ -304,7 +334,8 @@
   .content,
   .arrow-button,
   .hidden-text,
-  .destop-contact {
+  .destop-contact,
+  .destop-tag {
     display: none;
   }
   .nav-container {
@@ -449,6 +480,7 @@
     padding: 56.81px 21px 0 20px;
   }
   .footer-background .img-moblie {
+    width: 55px;
     display: block;
   }
   .footer-background .footer-title {
@@ -476,8 +508,10 @@
     font-size: 1.1em;
     margin-bottom: 20px;
   }
-  .footer-background .footer-subtitle .subtitle-heading img {
-    height: 15px;
+  .footer-background .footer-subtitle .hidden-text {
+    display: block;
+    width: 100%;
+    font-size: 1em;
   }
   .footer-background .footer-content {
     width: 100%;
