@@ -213,7 +213,7 @@
     .subtitle-heading {
       display: flex;
       justify-content: space-between;
-      .destop-tag {
+      .desktop-tag {
         cursor: pointer;
       }
     }
@@ -229,7 +229,7 @@
     .footer-content-heading {
       display: flex;
       justify-content: space-between;
-      .destop-tag {
+      .desktop-tag {
         cursor: pointer;
       }
     }
@@ -245,7 +245,7 @@
     .note-heading {
       display: flex;
       justify-content: space-between;
-      .destop-tag {
+      .desktop-tag {
         cursor: pointer;
       }
     }
@@ -323,7 +323,7 @@
   .arrow-button,
   .hidden-text,
   .destop-contact,
-  .destop-tag {
+  .desktop-tag {
     display: none;
   }
 
@@ -500,31 +500,6 @@
         display: block;
         width: 100%;
         font-size: 1em;
-      }
-    }
-    .footer-content {
-      width: 100%;
-      font-size: 1.15em;
-      .footer-content-heading {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 20px;
-        .heading-width {
-          width: 72%;
-        }
-      }
-      .hidden-text {
-        display: none;
-      }
-    }
-    .footer-note {
-      width: 100%;
-      font-size: 1.15em;
-      .note-heading {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
       }
     }
     .footer-contact {

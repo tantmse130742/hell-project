@@ -225,7 +225,7 @@
   display: flex;
   justify-content: space-between;
 }
-.footer-background .footer-subtitle .subtitle-heading .destop-tag {
+.footer-background .footer-subtitle .subtitle-heading .desktop-tag {
   cursor: pointer;
 }
 .footer-background .footer-subtitle .panagraph-content {
@@ -241,7 +241,7 @@
   display: flex;
   justify-content: space-between;
 }
-.footer-background .footer-content .footer-content-heading .destop-tag {
+.footer-background .footer-content .footer-content-heading .desktop-tag {
   cursor: pointer;
 }
 .footer-background .footer-content .panagraph-content {
@@ -257,7 +257,7 @@
   display: flex;
   justify-content: space-between;
 }
-.footer-background .footer-note .note-heading .destop-tag {
+.footer-background .footer-note .note-heading .desktop-tag {
   cursor: pointer;
 }
 .footer-background .footer-note .panagraph-content {
@@ -335,7 +335,7 @@
   .arrow-button,
   .hidden-text,
   .destop-contact,
-  .destop-tag {
+  .desktop-tag {
     display: none;
   }
   .nav-container {
@@ -512,31 +512,6 @@
     display: block;
     width: 100%;
     font-size: 1em;
-  }
-  .footer-background .footer-content {
-    width: 100%;
-    font-size: 1.15em;
-  }
-  .footer-background .footer-content .footer-content-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 20px;
-  }
-  .footer-background .footer-content .footer-content-heading .heading-width {
-    width: 72%;
-  }
-  .footer-background .footer-content .hidden-text {
-    display: none;
-  }
-  .footer-background .footer-note {
-    width: 100%;
-    font-size: 1.15em;
-  }
-  .footer-background .footer-note .note-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
   }
   .footer-background .footer-contact {
     margin-top: 70px;
