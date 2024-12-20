@@ -21,7 +21,8 @@
   height: 100vh;
   filter: brightness(0.9);
 }
-.background .nav-container {
+
+.nav-container {
   padding: 44px 78px 0 78px;
   align-items: center;
   display: flex;
@@ -29,7 +30,8 @@
   flex-wrap: wrap;
   color: var(--detail-color);
 }
-.background .nav-container .nav {
+
+.nav {
   display: flex;
   font-size: 14px;
   opacity: 0.6;
@@ -37,10 +39,12 @@
   gap: 25px;
   height: 23px;
 }
-.background .nav-container .logo img {
+
+.logo img {
   width: 455px;
 }
-.background .content {
+
+.content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -51,17 +55,20 @@
   color: var(--detail-color);
   margin: auto 78px 104.51px 78px;
 }
-.background .content .content-heading {
+
+.content-heading {
   font-weight: bold;
   font-size: 5.8em;
   max-width: 70%;
   margin: 0 0 20px 0;
 }
-.background .content .content-text {
+
+.content-text {
   max-width: 51%;
   font-size: 2.85em;
 }
-.background .arrow-button {
+
+.arrow-button {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -69,7 +76,8 @@
   left: 50%;
   color: var(--detail-color);
 }
-.background .arrow-button .arrow-button img {
+
+.arrow-button img {
   width: 40px;
   height: 40px;
 }
@@ -81,11 +89,13 @@
   width: 74%;
   margin: 90px 78px auto 78px;
 }
-.main-content .description {
+
+.description {
   font-size: 4em;
   margin: auto auto 25px auto;
 }
-.main-content .details {
+
+.details {
   width: 71%;
   font-size: 1.56em;
 }
@@ -93,7 +103,8 @@
 .image-details {
   padding: 120px 78px 88px 78px;
 }
-.image-details .image-details img {
+
+.image-details img {
   width: 100%;
   height: 800px;
 }
@@ -105,16 +116,19 @@
   gap: 190px;
   padding: 0 78px 90.21px 78px;
 }
-.text-details .text-left {
+
+.text-left {
   font-size: 1.66em;
   width: 30%;
 }
-.text-details .first-text {
+
+.first-text {
   font-size: 0.7em;
   margin-bottom: 20px;
   font-weight: bold;
 }
-.text-details .text-right {
+
+.text-right {
   font-size: 1.68em;
   width: 70%;
 }
@@ -127,24 +141,28 @@
   justify-content: flex-end;
   gap: 16px;
 }
-.image-container .img-left {
+
+.img-left {
   display: flex;
   justify-content: flex-start;
   padding: 0;
   position: relative;
   top: 140px;
 }
-.image-container .img-right {
+
+.img-right {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 87.24px;
 }
-.image-container .img-right img {
+
+.img-right img {
   width: 1000px;
   height: 1017px;
   max-width: 100%;
 }
-.image-container .img-left img {
+
+.img-left img {
   width: 600px;
   height: 700px;
   max-width: 100%;
@@ -159,13 +177,16 @@
   margin: 0 78px 140px 1060px;
   width: 700px;
 }
-.text-container .font-size-large {
+
+.font-size-large {
   font-size: 49px;
 }
-.text-container .logo-color {
+
+.logo-color {
   color: var(--logo-text-color);
 }
-.text-container .logo-color::before {
+
+.logo-color::before {
   content: "WERDEN SIE FRANCHISEPARTNER";
   display: inline-block;
 }
@@ -186,12 +207,12 @@
   gap: 142px;
   margin-bottom: 108.75px;
 }
-.footer-background .footer-title .title-heading-FAQs {
+.footer-background .title-heading-FAQs {
   font-size: 4em;
   width: 48%;
   font-weight: normal;
 }
-.footer-background .footer-title .title-content {
+.footer-background .title-content {
   font-size: 1.6em;
   width: 40%;
 }
@@ -203,12 +224,43 @@
 .footer-background .footer-subtitle .subtitle-heading {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 .footer-background .footer-subtitle .subtitle-heading .desktop-tag {
   cursor: pointer;
 }
 .footer-background .footer-subtitle .panagraph-content {
+  width: 90%;
+  font-size: 1.2em;
+}
+.footer-background .footer-content {
+  margin-top: 20px;
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+.footer-background .footer-content .footer-content-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-background .footer-content .footer-content-heading .desktop-tag {
+  cursor: pointer;
+}
+.footer-background .footer-content .panagraph-content {
+  width: 90%;
+  font-size: 1.2em;
+}
+.footer-background .footer-note {
+  margin-top: 20px;
+  font-size: 1.29em;
+  margin-bottom: 40px;
+}
+.footer-background .footer-note .note-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-background .footer-note .note-heading .desktop-tag {
+  cursor: pointer;
+}
+.footer-background .footer-note .panagraph-content {
   width: 90%;
   font-size: 1.2em;
 }
@@ -230,6 +282,14 @@
 .footer-background .footer-contact .button-logo {
   margin-top: 40px;
   width: 280px;
+}
+.footer-background .footer-heading-margin {
+  margin-bottom: 20px;
+}
+.footer-background .subtitle-heading,
+.footer-background .footer-content-heading,
+.footer-background .note-heading {
+  margin-bottom: 20px;
 }
 
 .ending {
@@ -262,7 +322,7 @@
 
 .nav-container-moblie,
 .content-moblie,
-.moblie-contact,
+.destop-moblie,
 .moblie-tag,
 .img-moblie {
   display: none;
@@ -287,13 +347,13 @@
     position: relative;
     filter: brightness(0.6);
   }
-  .background .nav-container-moblie {
+  .nav-container-moblie {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20.19px 21px 0 20px;
   }
-  .background .nav-container-moblie .menu-icon {
+  .menu-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -301,17 +361,17 @@
     height: 25px;
     cursor: pointer;
   }
-  .background .nav-container-moblie .menu-icon span {
+  .menu-icon span {
     display: block;
     width: 100%;
     height: 4px;
     background-color: var(--detail-color, transparent);
     border-radius: 5px;
   }
-  .background .logo-moblie {
+  .logo-moblie {
     display: inline-block;
   }
-  .background .logo-moblie img {
+  .logo-moblie img {
     width: 67vw;
     height: auto;
   }
@@ -322,23 +382,23 @@
     margin: 24.51px 21px 0 20px;
     overflow-x: hidden;
   }
-  .content-moblie .content-heading {
+  .content-heading {
     font-size: 9.78vw;
     max-width: 100%;
     width: 69.67vw;
   }
-  .content-moblie .content-text {
+  .content-text {
     font-size: 5.9vw;
     max-width: 100%;
     width: 74vw;
   }
-  .content-moblie .arrow-button-moblie {
+  .arrow-button-moblie {
     position: absolute;
     bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
   }
-  .content-moblie .arrow-button-moblie img {
+  .arrow-button-moblie img {
     width: 40px;
     height: auto;
   }
@@ -346,17 +406,17 @@
     width: 94%;
     margin: 90px 21px 0 20px;
   }
-  .main-content .description {
+  .description {
     font-size: 2.05em;
   }
-  .main-content .details {
+  .details {
     width: 96%;
     font-size: 1.15em;
   }
   .image-details {
     padding: 76px 21px 42px 20px;
   }
-  .image-details .image-details img {
+  .image-details img {
     height: 300px;
   }
   .text-details {
@@ -367,14 +427,14 @@
     font-size: 18px;
     padding: 0 0 0 20px;
   }
-  .text-details .first-text {
+  .first-text {
     font-size: 14px;
   }
-  .text-details .text-left {
+  .text-left {
     width: 81%;
     padding: 0 70px 30px 0;
   }
-  .text-details .text-right {
+  .text-right {
     font-weight: normal;
     width: 92%;
     font-size: 17.8px;
@@ -384,19 +444,19 @@
     gap: 10px;
     padding-bottom: 40.14px;
   }
-  .image-container .img-left {
+  .img-left {
     padding: 0 0 0 20px;
     position: unset;
   }
-  .image-container .img-right {
+  .img-right {
     padding-bottom: 30px;
   }
-  .image-container .img-left img {
+  .img-left img {
     width: 127.69px;
     height: 162.07px;
     max-width: 100%;
   }
-  .image-container .img-right img {
+  .img-right img {
     width: 271.7px;
     height: 277px;
     max-width: 100%;
@@ -406,10 +466,10 @@
     gap: 30px;
     width: 70%;
   }
-  .text-container .font-size-large {
+  .font-size-large {
     font-size: 33px;
   }
-  .text-container .font-size-medium {
+  .font-size-medium {
     font-size: 19px;
   }
   .logo-color::before {
@@ -461,7 +521,7 @@
     margin-bottom: 20px;
     font-weight: normal;
   }
-  .footer-background .footer-contact .moblie-contact {
+  .footer-background .footer-contact .destop-moblie {
     display: block;
     line-height: 1.5;
     font-size: 0.9em;
