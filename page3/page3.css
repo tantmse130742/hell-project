@@ -1,0 +1,493 @@
+@import url(/fonts.css);
+:root {
+  --primary-color: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.container-page {
+  padding: 0 78px 0 78px;
+}
+.container-page .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+.container-page .nav-container .nav-item {
+  display: flex;
+  font-size: 23px;
+  opacity: 0.6;
+  letter-spacing: 2px;
+  gap: 25px;
+}
+.container-page .nav-container .nav-item .bold {
+  opacity: 1;
+  font-weight: bold;
+}
+.container-page .nav-container .nav-item a:hover {
+  opacity: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container-page .nav-container .logo img {
+  width: 400px;
+}
+.container-page .page-heading {
+  width: 65%;
+  font-size: 56px;
+  margin-top: 80px;
+}
+.container-page .page-description-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 70px;
+  font-size: 23px;
+  opacity: 0.6;
+  color: black;
+}
+.container-page .page-description-nav a:hover {
+  opacity: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container-page .image-container {
+  margin: 78px 0 75px 0;
+  position: relative;
+}
+.container-page .image-container .image-center {
+  width: 100%;
+  height: auto;
+}
+.container-page .image-container .image-description {
+  right: 5%;
+  width: 16%;
+  height: auto;
+  position: absolute;
+  top: 765px;
+}
+.container-page .content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 110px 0 110px 0;
+  line-height: 1.5;
+}
+.container-page .content-container .contact-heading {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.container-page .content-container .contact-description {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.container-page .content-container .contact-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #748d88;
+  border-radius: 45px;
+  font-size: 30px;
+  width: 350px;
+  height: 70px;
+}
+
+.background-container {
+  background-color: #000000;
+  opacity: 0.8;
+  margin-top: 90px;
+  color: #ffffff;
+  padding: 0 78px 0 78px;
+}
+.background-container .rule-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  gap: 205px;
+  padding: 130px 0 120px 0;
+}
+.background-container .rule-description .FAQ {
+  width: 50%;
+  font-size: 60px;
+  font-weight: 400;
+}
+.background-container .rule-description .FAQ-description {
+  width: 52%;
+  font-size: 23px;
+  opacity: 0.7;
+}
+.background-container .content-container-background {
+  padding: 30px 0 40px 0;
+  font-size: 25px;
+}
+.background-container .content-container-background .content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.background-container .content-container-background .content-title .title-width {
+  width: 90%;
+}
+.background-container .content-container-background .content-description {
+  width: 90%;
+}
+.background-container .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 110px 0 110px 0;
+}
+.background-container .contact-container .contact-heading {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.background-container .contact-container .contact-description {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.background-container .contact-container .contact-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #748d88;
+  border-radius: 45px;
+  font-size: 30px;
+  width: 350px;
+  height: 70px;
+}
+
+.container-page .content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 111px;
+  margin-top: 108px;
+}
+.container-page .content-section .content-image {
+  width: 50%;
+  height: auto;
+}
+.container-page .content-section .content-text {
+  width: 50%;
+  font-size: 27px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.container-page .content-section .content-text .content-heading {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.container-page .content-section-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 111px;
+  margin-top: 108px;
+}
+.container-page .content-section-reverse .content-image {
+  width: 50%;
+  height: auto;
+}
+.container-page .content-section-reverse .content-text {
+  width: 50%;
+  font-size: 27px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.container-page .content-section-reverse .content-text .content-heading {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.container-page .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 110px 0 110px 0;
+  line-height: 1.5;
+}
+.container-page .contact-container .contact-heading {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.container-page .contact-container .contact-description {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.container-page .contact-container .contact-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #748d88;
+  border-radius: 45px;
+  font-size: 30px;
+  width: 350px;
+  height: 70px;
+}
+.container-page .contact-container .contact-logo {
+  color: #ffffff;
+}
+.container-page .footer-container {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.container-page .footer-container .company-logo {
+  margin-bottom: 30px;
+}
+.container-page .footer-container .contact-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.container-page .footer-container .contact-footer .sign {
+  opacity: 0.6;
+}
+.container-page .footer-container .contact-footer .sign .padding-right {
+  padding-right: 20px;
+}
+.container-page .footer-container .contact-footer .color-company {
+  color: #748d88;
+}
+
+.nav-menu-mobile,
+.mobile-button,
+.content-section-moblie {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container-page .nav-container .nav-item {
+    display: none;
+  }
+  .container-page {
+    padding: 0 20px 0 20px;
+  }
+  .container-page .nav-container .logo img {
+    width: 250px;
+  }
+  .container-page .nav-container .nav-menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: column;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .container-page .nav-container .nav-menu-mobile span {
+    display: block;
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 4px;
+  }
+  .container-page .page-heading {
+    width: 100%;
+    font-size: 32px;
+    margin-top: 62px;
+  }
+  .container-page .page-description-nav {
+    flex-direction: column;
+    gap: 11px;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .container-page .image-container {
+    margin: 40px 0 50px 0;
+  }
+  .container-page .image-container .image-center {
+    height: 260px;
+  }
+  .container-page .image-container .image-description {
+    right: 4%;
+    width: 35%;
+    top: 192px;
+  }
+  .container-page .content-container {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+    gap: 15px;
+    line-height: 1.5;
+  }
+  .container-page .content-container .content-left {
+    width: 90%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .container-page .content-container .content-right {
+    width: 99%;
+    font-size: 18px;
+  }
+  .background-container {
+    padding: 0 20px 0 20px;
+    margin-top: 105px;
+  }
+  .background-container .desktop-button {
+    display: none;
+  }
+  .background-container .rule-description {
+    display: block;
+    padding: 55px 0 50px 0;
+  }
+  .background-container .rule-description .FAQ {
+    width: 100%;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .background-container .rule-description .FAQ-description {
+    width: 100%;
+    font-size: 14px;
+    opacity: 1;
+  }
+  .background-container .content-container-background {
+    font-size: 15px;
+  }
+  .background-container .content-container-background .content-title .mobile-button {
+    display: block;
+    width: 25px;
+    height: 13px;
+  }
+  .background-container .content-container-background .content-title .title-width {
+    width: 64%;
+  }
+  .background-container .contact-container {
+    line-height: 1.5;
+  }
+  .background-container .contact-container .contact-heading {
+    font-size: 26px;
+    width: 50%;
+  }
+  .background-container .contact-container .contact-description {
+    font-size: 18px;
+  }
+  .background-container .contact-container .contact-logo {
+    font-size: 15px;
+    width: 162px;
+    height: 40px;
+  }
+  .container-page .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 60px;
+  }
+  .container-page .content-section .content-image {
+    width: 100%;
+    height: auto;
+  }
+  .container-page .content-section .content-text {
+    width: 100%;
+    font-size: 18px;
+  }
+  .container-page .content-section .content-text .content-heading {
+    font-size: 20px;
+  }
+  .container-page .content-section-reverse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    margin-top: 60px;
+    flex-direction: column-reverse;
+  }
+  .container-page .content-section-reverse .content-image {
+    width: 100%;
+    height: auto;
+  }
+  .container-page .content-section-reverse .content-text {
+    width: 100%;
+    font-size: 18px;
+  }
+  .container-page .content-section-reverse .content-text .content-heading {
+    font-size: 20px;
+  }
+  .container-page .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 110px 0 110px 0;
+    line-height: 1.5;
+  }
+  .container-page .contact-container .contact-heading {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .container-page .contact-container .contact-description {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .container-page .contact-container .contact-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #748d88;
+    border-radius: 45px;
+    font-size: 30px;
+    width: 350px;
+    height: 70px;
+  }
+  .container-page .contact-container .contact-heading {
+    font-size: 26px;
+    width: 50%;
+  }
+  .container-page .contact-container .contact-description {
+    font-size: 18px;
+  }
+  .container-page .contact-container .contact-logo {
+    font-size: 15px;
+    width: 162px;
+    height: 40px;
+  }
+  .container-page .footer-container .company-logo img {
+    width: 200px;
+    height: 50px;
+  }
+  .container-page .footer-container .contact-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 20px;
+  }
+  .container-page .footer-container .contact-footer .sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container-page .footer-container .contact-footer .sign .padding-right {
+    padding-right: 0;
+  }
+}/*# sourceMappingURL=page3.css.map */
