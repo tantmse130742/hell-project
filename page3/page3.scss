@@ -1,0 +1,456 @@
+@import url(/fonts.css);
+@mixin flex-box($Ox, $Oy) {
+  display: flex;
+  justify-content: $Ox;
+  align-items: $Oy;
+}
+@mixin content-section-shared-desktop {
+  @include flex-box(space-between, center);
+  gap: 111px;
+  margin-top: 108px;
+
+  .content-image {
+    width: 50%;
+    height: auto;
+  }
+
+  .content-text {
+    width: 50%;
+    font-size: 27px;
+    line-height: 1.5;
+    opacity: 0.8;
+    .content-heading {
+      font-weight: bold;
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+  }
+}
+@mixin content-section-shared-mobile {
+  @include flex-box(center, center);
+  flex-direction: column;
+  gap: 45px;
+  margin-top: 60px;
+
+  .content-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-text {
+    width: 100%;
+    font-size: 18px;
+    .content-heading {
+      font-size: 20px;
+    }
+  }
+}
+@mixin content-container-shared {
+  @include flex-box(center, center);
+  flex-direction: column;
+  text-align: center;
+  padding: 110px 0 110px 0;
+  line-height: 1.5;
+  .contact-heading {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .contact-description {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .contact-logo {
+    @include flex-box(center, center);
+    background-color: #748d88;
+    border-radius: 45px;
+    font-size: 30px;
+    width: 350px;
+    height: 70px;
+  }
+}
+:root {
+  --primary-color: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: var(--font-primary);
+}
+
+.container-page {
+  padding: 0 78px 0 78px;
+
+  .nav-container {
+    @include flex-box(space-between, center);
+    flex-wrap: wrap;
+    padding-top: 25px;
+
+    .nav-item {
+      display: flex;
+      font-size: 23px;
+      opacity: 0.6;
+      letter-spacing: 2px;
+      gap: 25px;
+
+      .bold {
+        opacity: 1;
+        font-weight: bold;
+      }
+
+      a:hover {
+        opacity: 1;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .logo img {
+      width: 400px;
+    }
+  }
+
+  .page-heading {
+    width: 65%;
+    font-size: 56px;
+    margin-top: 80px;
+  }
+
+  .page-description-nav {
+    @include flex-box(center, center);
+    gap: 25px;
+    margin-top: 70px;
+    font-size: 23px;
+    opacity: 0.6;
+    color: black;
+
+    a:hover {
+      opacity: 1;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .image-container {
+    margin: 78px 0 75px 0;
+    position: relative;
+    .image-center {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-description {
+      right: 5%;
+      width: 16%;
+      height: auto;
+      position: absolute;
+      top: 765px;
+    }
+  }
+
+  .content-container {
+    @include content-container-shared();
+  }
+}
+
+.background-container {
+  background-color: #000000;
+  opacity: 0.8;
+  margin-top: 90px;
+  color: #ffffff;
+  padding: 0 78px 0 78px;
+
+  .rule-description {
+    @include flex-box(space-between, unset);
+    letter-spacing: 2px;
+    line-height: 1.4;
+    gap: 205px;
+    padding: 130px 0 120px 0;
+
+    .FAQ {
+      width: 50%;
+      font-size: 60px;
+      font-weight: 400;
+    }
+    .FAQ-description {
+      width: 52%;
+      font-size: 23px;
+      opacity: 0.7;
+    }
+  }
+
+  .content-container-background {
+    padding: 30px 0 40px 0;
+    font-size: 25px;
+
+    .content-title {
+      @include flex-box(space-between, center);
+      font-weight: bold;
+      margin-bottom: 20px;
+
+      .title-width {
+        width: 90%;
+      }
+    }
+    .content-description {
+      width: 90%;
+    }
+  }
+
+  .contact-container {
+    @include flex-box(center, center);
+    flex-direction: column;
+    text-align: center;
+    padding: 110px 0 110px 0;
+
+    .contact-heading {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .contact-description {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .contact-logo {
+      @include flex-box(center, center);
+      background-color: #748d88;
+      border-radius: 45px;
+      font-size: 30px;
+      width: 350px;
+      height: 70px;
+    }
+  }
+}
+
+.container-page {
+  .content-section {
+    @include content-section-shared-desktop();
+  }
+  .content-section-reverse {
+    @include content-section-shared-desktop();
+  }
+  .contact-container {
+    @include content-container-shared();
+    .contact-logo {
+      color: #ffffff;
+    }
+  }
+
+  .footer-container {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .company-logo {
+      margin-bottom: 30px;
+    }
+    .contact-footer {
+      @include flex-box(space-between, unset);
+      margin-top: 30px;
+      font-size: 25px;
+
+      .sign {
+        opacity: 0.6;
+        .padding-right {
+          padding-right: 20px;
+        }
+      }
+      .color-company {
+        color: #748d88;
+      }
+    }
+  }
+}
+
+.nav-menu-mobile,
+.mobile-button,
+.content-section-moblie {
+  display: none;
+}
+
+// media queries Moblie is using
+@media (max-width: 768px) {
+  .container-page .nav-container .nav-item {
+    display: none;
+  }
+
+  .container-page {
+    padding: 0 20px 0 20px;
+
+    .nav-container {
+      .logo img {
+        width: 250px;
+      }
+
+      .nav-menu-mobile {
+        @include flex-box(space-between, baseline);
+        flex-direction: column;
+        width: 35px;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      .nav-menu-mobile span {
+        display: block;
+        background-color: black;
+        border-radius: 5px;
+        width: 100%;
+        height: 4px;
+      }
+    }
+
+    .page-heading {
+      width: 100%;
+      font-size: 32px;
+      margin-top: 62px;
+    }
+
+    .page-description-nav {
+      flex-direction: column;
+      gap: 11px;
+      margin-top: 40px;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .image-container {
+      margin: 40px 0 50px 0;
+
+      .image-center {
+        height: 260px;
+      }
+      .image-description {
+        right: 4%;
+        width: 35%;
+        top: 192px;
+      }
+    }
+
+    .content-container {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      gap: 15px;
+      line-height: 1.5;
+
+      .content-left {
+        width: 90%;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .content-right {
+        width: 99%;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .background-container {
+    .desktop-button {
+      display: none;
+    }
+    padding: 0 20px 0 20px;
+    margin-top: 105px;
+
+    .rule-description {
+      display: block;
+      padding: 55px 0 50px 0;
+
+      .FAQ {
+        width: 100%;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+      .FAQ-description {
+        width: 100%;
+        font-size: 14px;
+        opacity: 1;
+      }
+    }
+
+    .content-container-background {
+      font-size: 15px;
+
+      .content-title {
+        .mobile-button {
+          display: block;
+          width: 25px;
+          height: 13px;
+        }
+
+        .title-width {
+          width: 64%;
+        }
+      }
+    }
+
+    .contact-container {
+      line-height: 1.5;
+      .contact-heading {
+        font-size: 26px;
+        width: 50%;
+      }
+      .contact-description {
+        font-size: 18px;
+      }
+      .contact-logo {
+        font-size: 15px;
+        width: 162px;
+        height: 40px;
+      }
+    }
+  }
+
+  .container-page {
+    .content-section {
+      @include content-section-shared-mobile();
+    }
+    .content-section-reverse {
+      @include content-section-shared-mobile();
+      flex-direction: column-reverse;
+    }
+    .contact-container {
+      @include content-container-shared();
+      .contact-heading {
+        font-size: 26px;
+        width: 50%;
+      }
+      .contact-description {
+        font-size: 18px;
+      }
+      .contact-logo {
+        font-size: 15px;
+        width: 162px;
+        height: 40px;
+      }
+    }
+
+    .footer-container {
+      .company-logo img {
+        width: 200px;
+        height: 50px;
+      }
+      .contact-footer {
+        @include flex-box(center, center);
+        flex-direction: column;
+        font-size: 18px;
+        gap: 20px;
+
+        .sign {
+          @include flex-box(center, center);
+          flex-direction: column;
+          gap: 10px;
+
+          .padding-right {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
