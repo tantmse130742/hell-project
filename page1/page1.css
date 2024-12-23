@@ -13,8 +13,7 @@
 }
 
 .container {
-  background: transparent url(../iStock-185031101/iStock-185031101.png) 0% 0%
-    no-repeat padding-box;
+  background: transparent url(../iStock-185031101/iStock-185031101.png) 0% 0% no-repeat padding-box;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -501,4 +500,4 @@
   .ending .ending-container .margin-left-30px {
     margin-right: 0;
   }
-} /*# sourceMappingURL=page1.css.map */
+}/*# sourceMappingURL=page1.css.map */
