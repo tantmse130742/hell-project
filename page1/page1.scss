@@ -12,7 +12,7 @@
   --background-footer: #000000;
 }
 
-.background {
+.container {
   background: transparent url(../iStock-185031101/iStock-185031101.png) 0% 0%
     no-repeat padding-box;
   background-size: cover;
@@ -30,7 +30,7 @@
     flex-wrap: wrap;
     color: var(--detail-color);
 
-    .nav {
+    .nav-item {
       display: flex;
       font-size: 14px;
       opacity: 0.6;
@@ -44,7 +44,7 @@
     }
   }
 
-  .content {
+  .content-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -54,21 +54,20 @@
     transform: translateX(-4.8%);
     color: var(--detail-color);
     margin: auto 78px 104.51px 78px;
-  
+
     .content-heading {
       font-weight: bold;
       font-size: 5.8em;
       max-width: 70%;
       margin: 0 0 20px 0;
     }
-    
+
     .content-text {
       max-width: 51%;
       font-size: 2.85em;
     }
-    
   }
-  
+
   .arrow-button {
     display: flex;
     justify-content: center;
@@ -76,17 +75,13 @@
     bottom: 2%;
     left: 50%;
     color: var(--detail-color);
-  
+
     .arrow-button img {
       width: 40px;
       height: 40px;
     }
-    
   }
-  
-  
 }
-
 
 .main-content {
   display: flex;
@@ -99,14 +94,12 @@
     font-size: 4em;
     margin: auto auto 25px auto;
   }
-  
+
   .details {
     width: 71%;
     font-size: 1.56em;
   }
 }
-
-
 
 .image-details {
   padding: 120px 78px 88px 78px;
@@ -115,10 +108,7 @@
     width: 100%;
     height: 800px;
   }
-
 }
-
-
 
 .text-details {
   display: flex;
@@ -131,20 +121,18 @@
     font-size: 1.66em;
     width: 30%;
   }
-  
+
   .first-text {
     font-size: 0.7em;
     margin-bottom: 20px;
     font-weight: bold;
   }
-  
+
   .text-right {
     font-size: 1.68em;
     width: 70%;
   }
-  
 }
-
 
 .image-container {
   display: flex;
@@ -176,7 +164,6 @@
     height: 700px;
     max-width: 100%;
   }
-
 }
 
 .text-container {
@@ -199,9 +186,7 @@
     content: "WERDEN SIE FRANCHISEPARTNER";
     display: inline-block;
   }
-
 }
-
 
 .footer-background {
   display: flex;
@@ -211,7 +196,7 @@
   color: var(--detail-color);
   height: 100%;
   padding: 131.14px 78px 118.7px 78px;
-  
+
   .footer-title {
     display: flex;
     flex-direction: row;
@@ -228,9 +213,8 @@
       font-size: 1.6em;
       width: 40%;
     }
-
   }
- 
+
   .footer-subtitle {
     margin-top: 20px;
     font-size: 1.29em;
@@ -239,7 +223,7 @@
     .subtitle-heading {
       display: flex;
       justify-content: space-between;
-    margin-bottom: 20px;
+      margin-bottom: 20px;
       .desktop-tag {
         cursor: pointer;
       }
@@ -271,8 +255,6 @@
       width: 280px;
     }
   }
-
-
 }
 .ending {
   margin: 150px 78px 29px 78px;
@@ -306,27 +288,31 @@
 }
 
 .nav-container-moblie,
-.content-moblie,
+.content-container-mobile,
 .moblie-contact,
 .moblie-tag,
 .img-moblie {
   display: none;
 }
 @media (max-width: 768px) {
-  .nav,
+  .nav-item,
   .logo,
-  .content,
+  .content-container,
   .arrow-button,
   .hidden-text,
   .destop-contact,
   .desktop-tag {
     display: none;
   }
+  .container .content-container,
+  .container .nav-container .nav-item {
+    display: none;
+  }
 
   .nav-container {
     padding: 0;
   }
-  .background {
+  .container {
     max-height: 55vh !important;
     max-width: 100vw !important;
     position: relative;
@@ -354,7 +340,6 @@
         background-color: var(--detail-color, transparent);
         border-radius: 5px;
       }
-
     }
 
     .logo-moblie {
@@ -364,13 +349,9 @@
       width: 67vw;
       height: auto;
     }
-
   }
 
-
- 
-
-  .content-moblie {
+  .content-container-mobile {
     display: flex;
     flex-direction: column;
     min-height: 35vh;
@@ -388,7 +369,7 @@
       max-width: 100%;
       width: 74vw;
     }
-    
+
     .arrow-button-moblie {
       position: absolute;
       bottom: 2%;
@@ -398,10 +379,8 @@
     .arrow-button-moblie img {
       width: 40px;
       height: auto;
-    }  
-
+    }
   }
-
 
   .main-content {
     width: 94%;
@@ -415,7 +394,6 @@
       width: 96%;
       font-size: 1.15em;
     }
-
   }
 
   .image-details {
@@ -424,7 +402,6 @@
     .image-details img {
       height: 300px;
     }
-
   }
 
   .text-details {
@@ -450,7 +427,6 @@
       font-size: 17.8px;
       padding: 0 21px 56.21px 0;
     }
-
   }
 
   .image-container {
@@ -477,7 +453,6 @@
       height: 277px;
       max-width: 100%;
     }
-
   }
 
   .text-container {
@@ -492,14 +467,12 @@
     .font-size-medium {
       font-size: 19px;
     }
-
   }
 
   .logo-color::before {
     content: "WERDEN SIE FRANCHISEPARTNER";
     display: inline-block;
   }
-
 
   .footer-background {
     .img-moblie {
@@ -524,10 +497,8 @@
         font-size: 1.1em;
         width: 95%;
       }
-
     }
     .footer-subtitle {
-
       font-size: 1.15em;
       width: 100%;
 
@@ -544,10 +515,8 @@
         width: 100%;
         font-size: 1em;
       }
-
     }
     .footer-contact {
-
       margin-top: 70px;
 
       .contact-heading {
@@ -565,12 +534,9 @@
       .button-logo {
         width: 190px;
       }
-
     }
-
   }
   .ending {
-
     margin: 78.73px 21px 50px 20px;
 
     .logo-ending {
@@ -582,7 +548,6 @@
     }
 
     .ending-container {
-
       .destop-ending {
         display: none;
       }
@@ -599,7 +564,7 @@
       .margin-left-30px {
         margin-right: 0;
       }
-       
+
       flex-direction: column;
       text-align: center;
       gap: 5px;
