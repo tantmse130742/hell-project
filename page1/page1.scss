@@ -12,7 +12,7 @@
   --background-footer: #000000;
 }
 
-.container {
+.background-container {
   background: transparent url(../iStock-185031101/iStock-185031101.png) 0% 0%
     no-repeat padding-box;
   background-size: cover;
@@ -64,7 +64,7 @@
 
     .content-text {
       max-width: 51%;
-      font-size: 2.85em;
+      font-size: 40px;
     }
   }
 
@@ -83,7 +83,7 @@
   }
 }
 
-.main-content {
+.main-content-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -91,13 +91,13 @@
   margin: 90px 78px auto 78px;
 
   .description {
-    font-size: 4em;
+    font-size: 63px;
     margin: auto auto 25px auto;
   }
 
   .details {
     width: 71%;
-    font-size: 1.56em;
+    font-size: 24px;
   }
 }
 
@@ -115,7 +115,7 @@
   flex-direction: row;
   align-items: end;
   gap: 190px;
-  padding: 0 78px 90.21px 78px;
+  padding: 0 78px 90px 78px;
 
   .text-left {
     font-size: 1.66em;
@@ -129,8 +129,8 @@
   }
 
   .text-right {
-    font-size: 1.68em;
-    width: 70%;
+    font-size: 26px;
+    width: 67%;
   }
 }
 
@@ -152,7 +152,7 @@
   .img-right {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 87.24px;
+    padding-bottom: 87px;
   }
   .img-right img {
     width: 1000px;
@@ -168,7 +168,7 @@
 
 .text-container {
   flex-direction: column;
-  gap: 20px;
+  gap: 35px;
   display: flex;
   font-size: 24px;
   justify-content: flex-end;
@@ -195,14 +195,14 @@
   opacity: 0.8;
   color: var(--detail-color);
   height: 100%;
-  padding: 131.14px 78px 118.7px 78px;
+  padding: 131px 78px 118px 78px;
 
   .footer-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 142px;
-    margin-bottom: 108.75px;
+    margin-bottom: 108px;
 
     .title-heading-FAQs {
       font-size: 4em;
@@ -298,21 +298,23 @@
   .nav-item,
   .logo,
   .content-container,
-  .arrow-button,
   .hidden-text,
   .destop-contact,
   .desktop-tag {
     display: none;
   }
-  .container .content-container,
-  .container .nav-container .nav-item {
+  .background-container .content-container,
+  .background-container .nav-container .nav-item {
+    display: none;
+  }
+  .background-container .arrow-button {
     display: none;
   }
 
   .nav-container {
     padding: 0;
   }
-  .container {
+  .background-container {
     max-height: 55vh !important;
     max-width: 100vw !important;
     position: relative;
@@ -322,7 +324,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 20.19px 21px 0 20px;
+      margin: 0px 21px 0 20px;
 
       .menu-icon {
         display: flex;
@@ -355,13 +357,13 @@
     display: flex;
     flex-direction: column;
     min-height: 35vh;
-    margin: 24.51px 21px 0 20px;
+    margin: 24px 21px 0 20px;
     overflow-x: hidden;
 
     .content-heading {
       font-size: 9.78vw;
       max-width: 100%;
-      width: 69.67vw;
+      width: 70vw;
     }
 
     .content-text {
@@ -382,12 +384,12 @@
     }
   }
 
-  .main-content {
+  .main-content-container {
     width: 94%;
     margin: 90px 21px 0 20px;
 
     .description {
-      font-size: 2.05em;
+      font-size: 2em;
     }
 
     .details {
@@ -409,7 +411,7 @@
     font-weight: bold;
     align-items: normal;
     gap: 0;
-    font-size: 18px;
+    font-size: 11px;
     padding: 0 0 0 20px;
 
     .first-text {
@@ -417,7 +419,7 @@
     }
 
     .text-left {
-      width: 81%;
+      width: 83%;
       padding: 0 70px 30px 0;
     }
 
@@ -425,13 +427,13 @@
       font-weight: normal;
       width: 92%;
       font-size: 17.8px;
-      padding: 0 21px 56.21px 0;
+      padding: 0 21px 56px 0;
     }
   }
 
   .image-container {
     gap: 10px;
-    padding-bottom: 40.14px;
+    padding-bottom: 40px;
 
     .img-left {
       padding: 0 0 0 20px;
@@ -443,20 +445,20 @@
     }
 
     .img-left img {
-      width: 127.69px;
-      height: 162.07px;
+      width: 127px;
+      height: 162px;
       max-width: 100%;
     }
 
     .img-right img {
-      width: 271.7px;
+      width: 271px;
       height: 277px;
       max-width: 100%;
     }
   }
 
   .text-container {
-    margin: 0 21px 56.81px 106px;
+    margin: 0 21px 56px 106px;
     gap: 30px;
     width: 70%;
 
@@ -480,11 +482,11 @@
       display: block;
     }
 
-    padding: 56.81px 21px 0 20px;
+    padding: 56px 21px 0 20px;
 
     .footer-title {
       flex-direction: column;
-      gap: 24.75px;
+      gap: 24px;
       margin-bottom: 70px;
 
       .title-heading-FAQs {
@@ -537,10 +539,10 @@
     }
   }
   .ending {
-    margin: 78.73px 21px 50px 20px;
+    margin: 78px 21px 50px 20px;
 
     .logo-ending {
-      margin-bottom: 25.31px;
+      margin-bottom: 25px;
     }
 
     .logo-ending img {
