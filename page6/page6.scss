@@ -1,0 +1,84 @@
+@import url("../fonts.css");
+@mixin flex-box($Ox, $Oy) {
+  display: flex;
+  justify-content: $Ox;
+  align-items: $Oy;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: var(--font-primary);
+}
+
+.background-container {
+  padding: 0 78px;
+
+  .nav-container {
+    @include flex-box(space-between, center);
+    gap: 248px;
+    padding-top: 25px;
+
+    .nav-item {
+      display: flex;
+      gap: 26px;
+      font-size: 20px;
+      letter-spacing: 2px;
+
+      .opacity-low {
+        opacity: 0.4;
+        font-weight: bolder;
+      }
+      .bold {
+        font-weight: bolder;
+      }
+    }
+    .logo-company {
+      width: 330px;
+      height: 75px;
+    }
+  }
+
+  .service-center-desktop{
+    width: 700px;
+    font-size: 53px;
+  }
+}
+
+// Media querry moblie display
+@media (max-width: 768px) {
+  .background-container .nav-container .nav-item {
+    display: none;
+  }
+  .background-container {
+    padding: 0 20px;
+
+    .nav-container {
+      gap: 56px;
+      padding-top: 20px;
+
+      .menu-button-mobile {
+        @include flex-box(space-between, center);
+        flex-direction: column;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      .menu-button-mobile span {
+        display: block;
+        background-color: black;
+        border-radius: 0px;
+        width: 30px;
+        height: 4px;
+        opacity: 0.8;
+      }
+
+      .logo-company {
+        width: 246px;
+        height: 50px;
+      }
+    }
+  }
+}

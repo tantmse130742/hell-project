@@ -1,0 +1,75 @@
+@import url("../fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.background-container {
+  padding: 0 78px;
+}
+.background-container .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 248px;
+  padding-top: 25px;
+}
+.background-container .nav-container .nav-item {
+  display: flex;
+  gap: 26px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.background-container .nav-container .nav-item .opacity-low {
+  opacity: 0.4;
+  font-weight: bolder;
+}
+.background-container .nav-container .nav-item .bold {
+  font-weight: bolder;
+}
+.background-container .nav-container .logo-company {
+  width: 330px;
+  height: 75px;
+}
+.background-container .service-center-desktop {
+  width: 700px;
+  font-size: 53px;
+}
+
+@media (max-width: 768px) {
+  .background-container .nav-container .nav-item {
+    display: none;
+  }
+  .background-container {
+    padding: 0 20px;
+  }
+  .background-container .nav-container {
+    gap: 56px;
+    padding-top: 20px;
+  }
+  .background-container .nav-container .menu-button-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .background-container .nav-container .menu-button-mobile span {
+    display: block;
+    background-color: black;
+    border-radius: 0px;
+    width: 30px;
+    height: 4px;
+    opacity: 0.8;
+  }
+  .background-container .nav-container .logo-company {
+    width: 246px;
+    height: 50px;
+  }
+}/*# sourceMappingURL=page6.css.map */
